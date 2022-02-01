@@ -1,0 +1,51 @@
+delete from skok;
+delete from skakac;
+delete from skakaonica;
+delete from drzava;
+
+insert into drzava values ('NOR', 'Norveska');
+insert into drzava values ('KAZ', 'Kazahstan');
+insert into drzava values ('SLO', 'Slovenija');
+insert into drzava values ('AUT', 'Austrija');
+insert into drzava values ('POL', 'Poljska');
+insert into drzava values ('RUS', 'Rusija');
+insert into drzava values ('FIN', 'Finska');
+insert into drzava values ('KOR', 'Juzna Koreja');
+commit;
+
+insert into skakaonica values ('S-RSG1', 'RusSki Gorki JS', 106, 'normalna', 'RUS');
+insert into skakaonica values ('S-RSG2', 'RusSki Gorki JS', 140, 'velika', 'RUS');
+insert into skakaonica values ('S-SAL1', 'Salpausselka', 83, 'srednja', 'FIN');
+insert into skakaonica values ('S-ALS1', 'Alpensia Ski JS', 109, 'normalna', 'KOR');
+insert into skakaonica values ('S-LYS1', 'Lysgardsbakken', 100, 'normalna', 'NOR');
+insert into skakaonica values ('S-LYS2', 'Lysgardsbakken', 138, 'velika', 'NOR');
+insert into skakaonica values ('S-HOL1', 'Holmenkollbakken', 134, 'velika', 'NOR');
+insert into skakaonica values ('S-MAL1', 'Malinka', 134, 'velika', 'POL');
+commit;
+
+insert into skakac values (1, 'Peter', 'Prevc', 'SLO', 4, 123.5);
+insert into skakac values (2, 'Thomas', 'Morgenstern', 'AUT', 2, 139);
+insert into skakac values (3, 'Lars', 'Bystol', 'NOR', 0, 139.5);
+insert into skakac values (4, 'Assan', 'Takhtakhunov', 'KAZ', 0, 125);
+insert into skakac values (5, 'Roar', 'Ljokelsoy', 'NOR', 0, 110);
+insert into skakac values (6, 'Jarkko', 'Maatta', 'FIN', 0, 132);
+insert into skakac values (7, 'Harri', 'Olli', 'FIN', 0, 119);
+insert into skakac values (8, 'Dawid', 'Kubacki', 'POL', 1, 110);
+commit;
+
+insert into skok values ('SK01', 1, 'S-RSG1', 56, 57, 0);
+insert into skok values ('SK02', 6, 'S-RSG1', 31, 46.5, 0);
+insert into skok values ('SK03', 2, 'S-RSG1', 81, 52, 0);
+insert into skok values ('SK04', 6, 'S-SAL1', 82, 50, 0);
+insert into skok values ('SK05', 1, 'S-LYS1', 42, 49.5, 0);
+insert into skok values ('SK06', 3, 'S-LYS1', 80, 59.5, 0);
+insert into skok values ('SK07', 6, 'S-LYS1', 14, 51.5, 0);
+insert into skok values ('SK08', 7, 'S-LYS1', 40, 49, 0);
+insert into skok values ('SK09', 2, 'S-LYS1', 88, 51, 0);
+insert into skok values ('SK10', 1, 'S-LYS2', 27.5, 49.5, 0);
+insert into skok values ('SK11', 5, 'S-LYS2', 55, 58, 0);
+insert into skok values ('SK12', 6, 'S-LYS2', 74, 51.5, 0);
+insert into skok values ('SK13', 1, 'S-HOL1', 47, 41, 0);
+insert into skok values ('SK14', 5, 'S-HOL1', 48.5, 60, 0);
+insert into skok values ('SK15', 1, 'S-MAL1', 15, 50, 0);
+commit;
